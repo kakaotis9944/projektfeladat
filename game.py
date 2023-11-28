@@ -2,7 +2,9 @@ from tkinter import *
 from tkinter import messagebox
 import random
 #Szavak
-word_list=["keyboard", "mouse", "ant"]
+word_list=["Ködlámpa", "Faág", "Éjjeliszekrény", "Gondolatolvasás", "esőkabát", "túristajelzés", "madártoll",
+           "téliálom", "fenyőillat", "Kenyérpirító", "Családfa", "Kutatócsoport", "Rakott krumpli", "Befőttesüveg",
+           "Villámcsapás", "Elnökválasztás"]
 #változók
 timeleft=60
 i=0
