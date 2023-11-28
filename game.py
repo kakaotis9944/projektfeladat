@@ -1,8 +1,16 @@
 from tkinter import *
 from tkinter import messagebox
 import random
-
+#Szavak
+word_list=["keyboard", "mouse", "ant"]
+#változók
 timeleft=60
+i=0
+score=0
+miss=0
+sliderwords = ""
+count = 0
+#függvények
 def timer():
     global timeleft, i
     if timeleft>0:
@@ -30,12 +38,6 @@ def timer():
             emoji1Label.place_forget()
         else:
             root.destroy()
-
-
-
-i=0
-score=0
-miss=0
 def start_game(event):
     if wordEntry.get()!="":
         global i, score, miss
@@ -50,16 +52,6 @@ def start_game(event):
             miss+=1
         random.shuffle(word_list)
         word_list_Label.config(text=word_list[0])
-        wordEntry.delete(0, END)
-
-
-
-#Szavak
-word_list=["keyboard", "mouse", "ant"]
-
-#Függvények
-sliderwords = ""
-count = 0
 def slider():
     global sliderwords, count
     text = "Figyelj a gyorsaságra és a helyességre!"
