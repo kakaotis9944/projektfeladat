@@ -54,6 +54,7 @@ def start_game(event):
             miss+=1
         random.shuffle(word_list)
         word_list_Label.config(text=word_list[0])
+        wordEntry.delete(0, END)
 def slider():
     global sliderwords, count
     text = "Figyelj a gyorsaságra és a helyességre!"
